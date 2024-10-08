@@ -24,7 +24,7 @@ const Experience = () => {
     const teachStack = document.querySelectorAll("#stack");
     const cards = document.querySelectorAll("#card"); // Get cards inside useEffect
 
-    const animateCards = (cards) => {
+    const animateCards = (cards: any) => {
       gsap
         .timeline({
           scrollTrigger: {
@@ -253,7 +253,8 @@ const Experience = () => {
               Technical Lead Intern
             </h2>
             <p className="text-white text-sm">
-              Led the company's development and content production departments.{" "}
+              Led the company&apos;s development and content production
+              departments.{" "}
             </p>
           </div>
         </div>
