@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scroll {
+  width: 30px; /* Decreased width */
+  height: 30px; /* Decreased height */
+  margin-left: 30px; /* Optional: Adjust margin if needed */
+  border: 2px solid #333;
+  border-radius: 50%;
+  position: relative;
+  animation: down 1.5s infinite;
+  -webkit-animation: down 1.5s infinite;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px; /* Adjusted for centering */
+    left: 8px; /* Adjusted for centering */
+    width: 8px; /* Decreased width */
+    height: 8px; /* Decreased height */
+    border-left: 2px solid #333;
+    border-bottom: 2px solid #333;
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
+
+@-webkit-keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
