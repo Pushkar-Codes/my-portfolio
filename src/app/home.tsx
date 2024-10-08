@@ -49,7 +49,7 @@ const Homepage = () => {
           <div className="flex flex-col w-auto space-y-4 mt-8 text-white">
             <Link href="/projects">
               <div className="flex relative items-center w-auto group">
-                <span>Projectss</span>
+                <span>Projects</span>
                 <svg
                   className="absolute top-0 right-9 w-3 h-3 group-hover:translate-x-2 transition-transform"
                   xmlns="http://www.w3.org/2000/svg"
