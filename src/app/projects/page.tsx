@@ -24,7 +24,7 @@ const Projects = () => {
     const teachStack = document.querySelectorAll("#stack");
     const cards = document.querySelectorAll("#card"); // Get cards inside useEffect
 
-    const animateCards = (cards) => {
+    const animateCards = (cards: any) => {
       gsap
         .timeline({
           scrollTrigger: {
